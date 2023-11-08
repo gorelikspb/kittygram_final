@@ -1,27 +1,34 @@
-# Учебный проект: контейнеры и CI/CD для Kittygram и Taski
+# Educational Project: Containers and CI/CD, Two Projects on one Server
 
-## Что сделано
-- Настроен запуск проектов в контейнерах Docker
-- Настроено автоматическое тестирование и деплой на удалённый сервер
-- Автоматизация CI/CD настроена через GitHub Actions
-- Пуш в ветку main на Github запускает тестирование и деплой Kittygram, а после успешного деплоя приходит сообщение в Telegram
-- Образы обновляются на Docker Hub
-- Сервер Nginx,  развёрнутый на сервере, переадресовывывает запросы в соответсвующий проект.
+**What's Been Accomplished:**
+- Set up project deployment within **Docker containers**.
+- Implemented automated testing and deployment to a remote server.
+- Established **CI/CD** automation through **GitHub Actions**.
+- Pushing to the main branch on GitHub triggers testing and deployment for Kittygram, with a success notification sent to **Telegram**.
+- **Docker Hub** is used for image updates.
+- The **Nginx** server, deployed on the remote server, redirects requests to the respective project.
 
-Проекты состоят из бэкенд-приложения на Django и фронтенд-приложения на React. WSGI-сервер Gunicorn используется для  работы с бэкенд-приложением.
-Происходит шифрование запросов по протоколу HTTPS.
+**Technologies Used:**
+- **Backend:** Django, Gunicorn.
+- **Frontend:** React.
+- **Network Security:** **HTTPS** protocol.
 
+## About the Projects
 
-## О проектах
 ### Kittygram
-[https://kittygramgo.ddns.net](url)
-Cоциальная сеть для обмена фотографиями любимых питомцев.
-Можно завести учетную запись, загружать фотографии, редактировать дополнительные атрибуты для питомцев.
+[Project Link](https://kittygramgo.ddns.net)
+
+Kittygram is a social network for sharing photos of your beloved pets. Here, you can:
+- Create an account.
+- Upload pet photos.
+- Edit additional attributes for your pets.
 
 ### Taski
-[https://gorelikspb.ddns.net](url)
-Приложение для планирования своих задач.
-Можно добавлять задачи и отмечать их как выполненные.
+[Project Link](https://gorelikspb.ddns.net)
 
-## Для связи
+Taski is a task planning application. You can:
+- Add tasks.
+- Mark tasks as completed.
+
+**Contact:**
 gorelikspb@gmail.com
